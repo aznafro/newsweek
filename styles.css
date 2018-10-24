@@ -1,0 +1,445 @@
+body {
+	padding: 0 15px;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+header,
+main {
+	background-color: white;
+}
+
+/**
+	TYPOGRAPHY
+**/
+h2 {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: darkgray;
+	margin-top: 15px;
+}
+
+/**
+	HEADER
+**/
+header {
+	background-color: #f72210;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 15px;
+}
+
+h1 {
+	color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.header__action-box {
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+	font-weight: bold;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.sign-in {
+	color: white;
+	padding-right: 5px;
+}
+
+.subscribe {
+	background-color: white;
+	color: #f72210;
+	padding: 3px 5px;
+}
+
+.menu {
+	display: inline-block;
+    width: 40px;
+    height: 38px;
+    padding: 12px;
+}
+
+.line {
+	height: 2px;
+	width: 100%;
+	background-color: white;
+}
+
+.line:not(:last-child) {
+	margin-bottom: 4px;
+}
+
+/**
+	TOP SECTIONS
+**/
+.top-story {
+	order: -1;
+}
+
+/**
+	CARD
+**/
+.card,
+.latest-news .card-sm:not(:last-child) {
+	border: none;
+	padding-bottom: 15px;
+	border-bottom: 1px solid lightgray;
+}
+
+.header-link {
+	margin-bottom: 35px;
+}
+
+.header-link a {
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.header-link a:hover {
+	color: #f72210;
+}
+
+.img-box {
+	position: relative;
+}
+
+.card-img-overlay {
+	top: unset;
+	right: unset;
+	bottom: 0;
+	display: inline-block;
+	padding: 7px 15px;
+	background-color: whitesmoke;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.card-img-overlay a {
+	color: #f72210;
+	text-decoration: none;
+}
+
+.card-title {
+	margin-top: .5rem;
+	font-size: 19px;
+	font-weight: bold;
+}
+
+.card-title a {
+	color: black;
+	text-decoration-color: #f72210;
+}
+
+.card-title.header-link {
+	margin-bottom: 5px;
+}
+
+.card-text {
+	font-size: 13px;
+	opacity: .97;
+}
+
+.card.survey .card-img-overlay {
+	background-color: white;
+}
+
+.card.sponsor {
+	border-bottom: none;
+}
+
+.card.sponsor .card-body {
+	border-left: 1px solid lightgray;
+	border-right: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+}
+
+.card.sponsor .card-img-overlay {
+	color: steelblue;
+}
+
+.card.opinion {
+	margin-bottom: 0;
+}
+
+.card.opinion .card-img {
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+}
+
+.card.opinion .card-author {
+	font-weight: bold;
+	color: gray;
+	font-size: 13px;
+}
+
+.card-author .name {
+	color: gray;
+	text-decoration: none;
+}
+
+.card-author .name:hover {
+	color: #f72210;
+}
+
+.card-sm {
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top: 1px solid lightgray;
+	border-bottom: none;
+}
+
+.card-sm::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.card-sm .card-img {
+	float: left;
+	width: 180px;
+	height: 120px;
+	margin-right: 15px;
+}
+
+.card-sm .card-title {
+	margin-top: 0;
+	font-size: 15px;
+}
+
+/**
+	LATEST NEWS
+**/
+.latest-news {
+	margin-bottom: 20px;
+}
+
+.latest-news .card {
+	display: flex;
+	flex-direction: row;
+}
+
+/**
+	NEWSLETTER
+**/
+.newsletter {
+	width: 300px;
+	margin: 30px auto 10px auto;
+	padding: 15px;
+	border: 1px solid lightgray;
+	background-color: whitesmoke;
+}
+
+.newsletter__header {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 15px;
+}
+
+.newsletter__n {
+	position: relative;
+	top: 3px;
+	display: inline-block;
+	color: white;
+	background-color: #f72210;
+	font-weight: bold;
+	height: 35px;
+	padding: 5px 10px;
+	margin-right: 10px;
+}
+
+.newsletter__heading {
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #333;
+	line-height: 20px;
+	font-weight: bold;
+}
+
+.newsletter__button {
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #333;
+	padding: 7px 10px;
+	margin-bottom: 10px;
+	border: none;
+}
+
+.newsletter__text {
+	font-style: 13px;
+	color: #333;
+}
+
+/**
+	ISSUE
+**/
+.in-the-mag__first-line {
+	align-items: flex-end;
+	margin-bottom: 15px;
+}
+
+.issue__footer {
+	background-color: whitesmoke;
+}
+
+.issue__footer:hover {
+	background-color: lightgray;
+	cursor: pointer;
+}
+
+.issue__footer--text {
+	text-align: center;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.issue__footer--text a {
+	display: inline-block;
+	padding: 5px 0;
+	color: black;
+	text-decoration: none;
+}
+
+/**
+	IN THE MAGAZINE SECTION
+**/
+.in-the-mag {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.bottom-links__header {
+	text-transform: uppercase;
+	padding: 7px;
+	margin: 0 15px 15px 15px;
+	text-align: center;
+	border-bottom: 1px solid lightgray;
+}
+
+/**
+	EDITOR'S PICK SECTION
+**/
+.editors .bottom-links__header {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.no-border {
+	border-bottom: none;
+}
+
+.in-the-mag .card,
+.editors .card {
+	border-bottom: none;
+}
+
+.in-the-mag .card {
+	padding: 0;
+}
+
+.card-mag-links {
+	margin-top: 15px;
+}
+
+.type,
+.category {
+	display: inline-block;
+	padding: 2px 5px;
+	font-weight: bold;
+}
+
+.type:hover,
+.category:hover {
+	text-decoration: none;
+}
+
+.card-mag-links .type {
+	color: white;
+	background-color: #f72210;
+}
+
+.category {
+	color: #f72210;
+	background-color: white;
+}
+
+/**
+	FEATURED SLIDESHOWS SECTION
+**/
+.card-img-overlay__count {
+	background: url(https://www.newsweek.com/g00/3_c-8yyy.pgyuyggm.eqo_/c-8OQTGRJGWU46x24jvvrux3ax2fx2fyyy.pgyuyggm.eqox2fukvgux2fyyy.pgyuyggm.eqox2fvjgogux2fpgyuyggmx2fkocigux2fkeqp-unkfgujqyu-py.rpix3fk32e.octmx3dpqvJVON_$/$/$/$/$/$/$);
+}
+
+/**
+	HELPER CLASSES
+**/
+.hidden {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+	.top-story {
+		order: 0;
+	}
+
+	.sponsor-resp {
+		width: 45%;
+		margin: 0 auto;
+	}
+
+	.sponsor-resp .card-title {
+		width: 60%;
+	}
+
+	.latest-news .card-img {
+		width: 100px;
+		height: 70px;
+		border-radius: 0;
+	}
+
+	.issue {
+		width: 25%;
+		padding-right: 15px;
+		margin-top: 85px	;
+	}
+
+	.in-the-mag {
+		flex-direction: row;
+	}
+
+	.in-the-mag .card-img {
+		height: 20vw;
+	}
+
+	.in-the-mag .card {
+		padding: 0 15px;
+	}
+
+	.mags .bottom-links__header {
+		border-bottom: 1px solid lightgray;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.sponsor-resp,
+	.newsletter {
+		width: 100%;
+	}
+
+	.container-fluid {
+		padding: 0 25px;
+	}
+}
