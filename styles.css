@@ -32,8 +32,8 @@ nav {
 }
 
 .top-links a {
-	padding-right: 15px;
-	padding-left: 15px;
+	padding-right: 1vw;
+	padding-left: 1vw;
 	font-size: 19px;
 	font-weight: bold;
 	color: black;
