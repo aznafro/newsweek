@@ -1,11 +1,16 @@
 body {
-	padding: 0 15px;
 	background-color: rgba(0, 0, 0, 0.05);
+	max-width: 1310px;
+	margin: 0 auto;
 }
 
 header,
 main {
 	background-color: white;
+}
+
+main {
+	margin-top: 38px;
 }
 
 /**
@@ -26,6 +31,11 @@ header {
 	display: flex;
 	justify-content: space-between;
 	padding-left: 15px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 5;
 }
 
 h1 {
@@ -125,6 +135,14 @@ h1 {
 .card-img-overlay a {
 	color: #f72210;
 	text-decoration: none;
+	position: relative;
+	top: -3px;
+	left: 3px;
+	font-size: 18px;
+}
+
+.sponsor .card-img-overlay a {
+	color: unset;
 }
 
 .card-title {
@@ -381,6 +399,247 @@ h1 {
 **/
 .card-img-overlay__count {
 	background: url(https://www.newsweek.com/g00/3_c-8yyy.pgyuyggm.eqo_/c-8OQTGRJGWU46x24jvvrux3ax2fx2fyyy.pgyuyggm.eqox2fukvgux2fyyy.pgyuyggm.eqox2fvjgogux2fpgyuyggmx2fkocigux2fkeqp-unkfgujqyu-py.rpix3fk32e.octmx3dpqvJVON_$/$/$/$/$/$/$);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 60px;
+	padding: 27px;
+}
+
+.slideshows .card {
+	border-bottom: none;
+}
+
+/**
+	CATEGORIES LINKS SECTION
+**/
+.category-links__header {
+	padding-top: 20px;
+	border-top: 1px solid lightgray;
+}
+
+.category-links__header a {
+	color: #f72210;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.category-links .card {
+	border-bottom: none;
+}
+
+.category-links .card-sm:first-child {
+	border-top: none;
+	padding-top: 0;
+}
+
+.small-links .card-sm {
+	padding-bottom: 10px;
+	display: flex;
+	flex-direction: row;
+}
+
+.category-links .card-sm:not(:first-child) {
+	padding-top: 10px;
+}
+
+.category-links .card-img {
+	border-radius: 0;
+}
+
+.small-links .card-img {
+	width: 185px;
+	height: 125px;
+}
+
+/**
+	BOTTOM CONTENT (Subscription, Sponsor and Most Read)
+**/
+.bot-content-box {
+	display: flex;
+	flex-direction: column;
+}
+
+.bot-content-box__header {
+	color: #f72210;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.subscribe-box {
+	display: flex;
+	flex-direction: column;
+	background-color: #f4f5f6;
+}
+
+/**
+	SUBSCRIPTION SECTION
+**/
+.subscribe-box {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 40px;
+}
+
+.subscribe-box .card-sm:first-child {
+	border-top: none;
+}
+
+.subscribe-box .card-sm {
+	background-color: #f4f5f6;
+}
+
+.subscribe-box__button-box {
+	text-align: center;	
+	margin: 10px 0;
+}
+
+.subscribe-box__button-box a {
+	display: inline-block;
+	background-color: #f72210;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	padding: 5px 10px;
+}
+
+/**
+	SPONSPOR SECTION
+**/
+.bot-content-box .sponsor {
+	margin-top: 15px;
+	height: 0%;
+}
+
+.bot-content-box .sponsor .card-body {
+	background-color: #f8f8f8;
+}
+
+.bot-content-box .sponsor .card-img-overlay {
+	top: -35px;
+	bottom: unset;
+	background-color: white;
+	color: #1fb8fc;
+	padding-left: 0;
+	font-size: 16px;
+}
+
+.bot-content-box .sponsor .card-img-overlay a {
+	color: #1fb8fc;
+}
+
+/**
+	MOST READ SECTION
+**/
+.most-read__header a {
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #333;
+}
+
+.most-read .card-img {
+	border-radius: 0;
+	width: 90px;
+	height: 65px;
+}
+
+/**
+	FOOTER SECTION
+**/
+footer {
+	background-color: white;
+	border-top: 1px solid lightgray;
+}
+
+.logo-box,
+.footer-box__top {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-box__top {
+	padding: 20px 0 10px 0;
+	border-bottom: 1px solid lightgray;
+}
+
+.logo {
+	font-size: 50px;
+	font-weight: bold;
+	color: #f72210;
+}
+
+.copyright {
+	font-size: 13px;
+	color: gray;
+	padding-left: 5px;
+	padding-bottom: 7px;
+
+}
+
+.social-media-links {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.social-media-links li:not(:last-child) {
+	padding-right: 15px;
+}
+
+.social-media-links i {
+	color: gray;
+	font-size: 23px;
+}
+
+.footer-box__bot {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 20px;
+}
+
+.footer-box__bot ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	height: 0%;
+}
+
+.footer-box__bot ul:first-child {
+	margin-bottom: 0;
+}
+
+.editions {
+	display: flex;
+	flex-direction: row;
+}
+
+.editions p {
+	margin-right: 15px;
+	font-weight: bold;
+	color: #555;
+}
+
+.footer-box__bot li:not(:last-child) {
+	padding-right: 7px;
+}
+
+.footer-box__bot a {
+	color: #555;
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 28px;
+	padding-right: 7px;
+}
+
+.footer-box__bot a:hover {
+	color: black;
 }
 
 /**
@@ -396,7 +655,7 @@ h1 {
 	}
 
 	.sponsor-resp {
-		width: 45%;
+		width: 330px;
 		margin: 0 auto;
 	}
 
@@ -431,6 +690,31 @@ h1 {
 	.mags .bottom-links__header {
 		border-bottom: 1px solid lightgray;
 	}
+
+	.small-links .card-img {
+		width: 105px;
+		height: 70px;
+	}
+
+	.subscribe-box {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.subscribe-box .card-sm:nth-child(2) {
+		border-top: none;
+	}
+
+	.logo-box,
+	.footer-box__top {
+		flex-direction: row;
+		align-items: flex-end;
+	}
+
+	.footer-box__top {
+		justify-content: space-between;
+	}
 }
 
 @media only screen and (min-width: 992px) {
@@ -439,7 +723,48 @@ h1 {
 		width: 100%;
 	}
 
-	.container-fluid {
-		padding: 0 25px;
+	.bot-content-box {
+		flex-direction: row;
+	}
+
+	.subscribe-box {
+		flex-direction: column;
+	}
+
+	.subscribe-box .card-sm {
+		flex-direction: column;
+	}
+
+	.subscribe-box .card-sm:nth-child(2) {
+		border-top: 1px solid lightgray;
+	}
+
+	.subscribe-box .card-img {
+		float: unset;
+	}
+
+	.footer-box__top {
+		margin-bottom: 10px;
+	}
+
+	.footer-box__bot {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.footer-box__bot ul:first-child {
+		width: 50%;
+	}
+
+	.footer-box__bot .editions {
+		width: 30%;
+	}
+
+	.footer-box__bot a {
+		line-height: 20px;
+	}
+
+	.footer-box__bot li:not(:last-child) a {
+		border-right: 1px solid lightgray;
 	}
 }
