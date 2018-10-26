@@ -2,6 +2,7 @@ body {
 	background-color: rgba(0, 0, 0, 0.05);
 	max-width: 1310px;
 	margin: 0 auto;
+	font-family: "Roboto Condensed", Arial, sans-serif;
 }
 
 header,
@@ -121,8 +122,28 @@ h1 {
 /**
 	TOP SECTIONS
 **/
-.top-story {
+.top-story-section {
 	order: -1;
+}
+
+.top-story {
+	margin-bottom: 20px;
+}
+
+.top-story .header-link {
+	padding: 15px 0;
+}
+
+.top-story .header-link a {
+	font-size: 18px;
+}
+
+/**
+	FEATURED STORIES
+**/
+.featured-story {
+	padding-bottom: 5px;
+	margin-bottom: 15px;
 }
 
 /**
@@ -136,7 +157,12 @@ h1 {
 }
 
 .header-link {
-	margin-bottom: 35px;
+	line-height: 15px;
+}
+
+.top-story .header-link,
+.featured-story .header-link {
+	padding: 10px 0;
 }
 
 .header-link a {
@@ -182,17 +208,18 @@ h1 {
 
 .card-title {
 	margin-top: .5rem;
-	font-size: 19px;
 	font-weight: bold;
+	line-height: 23px;
 }
 
 .card-title a {
 	color: black;
+	font-size: 21px;
 	text-decoration-color: #f72210;
 }
 
 .card-title.header-link {
-	margin-bottom: 5px;
+	margin-bottom: 0;
 }
 
 .card-text {
@@ -220,12 +247,25 @@ h1 {
 
 .card.opinion {
 	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 .card.opinion .card-img {
 	border-radius: 50%;
 	width: 70px;
 	height: 70px;
+}
+
+.opinions .card-title {
+	line-height: 15px;
+}
+
+.opinions .card .card-title a {
+	font-size: 17px;
+}
+
+.category-links .card-sm .card-title {
+	line-height: 18px;
 }
 
 .card.opinion .card-author {
@@ -255,7 +295,6 @@ h1 {
 	display: flex;
 	flex-direction: row;
 	padding-top: 15px;
-	padding-bottom: 15px;
 	border-top: 1px solid lightgray;
 	border-bottom: none;
 }
@@ -274,7 +313,10 @@ h1 {
 
 .card-sm .card-title {
 	margin-top: 0;
-	font-size: 15px;
+}
+
+.card-sm .card-title a {
+	font-size: 18px;
 }
 
 /**
@@ -436,6 +478,10 @@ h1 {
 .category {
 	color: #f72210;
 	background-color: white;
+}
+
+.card-title:not(.header-link):not(.more-stories .card-title) a {
+	font-size: 21px;
 }
 
 /**
@@ -719,8 +765,13 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-	.top-story {
+	.top-story-section {
 		order: 0;
+	}
+
+	.top-story .header-link,
+	.featured-story .header-link {
+		border-bottom: 1px solid lightgray;
 	}
 
 	.sponsor-resp {
